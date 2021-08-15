@@ -1,14 +1,13 @@
 // Exercício 1 - Classe
 class Moto {
-  public velocidade: number = 0;
-
+  public velocidade = 0;
   constructor(public nome: string) {}
 
   buzinar() {
     console.log('Toooooooooot!');
   }
 
-  acelerar(delta: number) {
+  acelerar(delta: number): void {
     this.velocidade = this.velocidade + delta;
   }
 }
@@ -20,10 +19,8 @@ moto.acelerar(30);
 console.log(moto.velocidade);
 
 // Exercício 2 - Herança
-abstract class Objeto2D {
+class Objeto2D {
   constructor(public base: number = 0, public altura: number = 0) {}
-
-  abstract area(): number;
 }
 
 class Retangulo extends Objeto2D {
@@ -33,14 +30,12 @@ class Retangulo extends Objeto2D {
 }
 
 const retangulo = new Retangulo(5, 7);
-retangulo.base = 10;
-// retangulo.altura = 7
 console.log(retangulo.area());
 
 // Exercício 3 - Getters & Setters
-class Estagiario {
-  private _primeiroNome: string = '';
 
+class Estatiario {
+  private _primeiroNome: string = '';
   get primeiroNome() {
     return this._primeiroNome;
   }
@@ -54,7 +49,8 @@ class Estagiario {
   }
 }
 
-const estagiario = new Estagiario();
+const estagiario = new Estatiario();
+
 console.log(estagiario.primeiroNome);
 estagiario.primeiroNome = 'Le';
 console.log(estagiario.primeiroNome);
