@@ -7,7 +7,7 @@ console.log(`Canal = ${canal}`);
 // let nome = 'Pedro'
 
 function soma(a: any, b: any) {
-  return a + b;
+    return a + b;
 }
 
 let qualquerCoisa;
@@ -15,11 +15,11 @@ qualquerCoisa = 12;
 qualquerCoisa = 'abc';
 
 function saudar(isManha: boolean): string {
-  let saudacao: string;
-  if (isManha) {
-    saudacao = 'Bom Dia!';
-  } else {
-    saudacao = 'Tenha uma boa vida!';
-  }
-  return saudacao;
+    let saudacao: string;
+    if (isManha) {
+        saudacao = 'Bom Dia!';
+    } else {
+        saudacao = 'Tenha uma boa vida!';
+    }
+    return saudacao;
 }

@@ -4,8 +4,8 @@ console.log(seraQuePode);
 
 let estaFrio = true;
 if (estaFrio) {
-  let acao = 'Colocar o casaco!';
-  console.log(acao);
+    let acao = 'Colocar o casaco!';
+    console.log(acao);
 }
 
 const cpf: string = '123.456.000-99';
@@ -14,27 +14,27 @@ console.log(cpf);
 
 var segredo = 'externo!';
 function revelar() {
-  const segredo = 'interno';
-  console.log(segredo);
+    const segredo = 'interno';
+    console.log(segredo);
 }
 revelar();
 console.log(segredo);
 
 {
-  {
-    const def = 'def';
-    console.log(def);
-  }
+    {
+        const def = 'def';
+        console.log(def);
+    }
 }
 
 for (let i = 0; i < 10; i++) {
-  console.log(i);
+    console.log(i);
 }
 // console.log(i)
 
 // Arrow Function
 function somar(n1: number, n2: number): number {
-  return n1 + n2;
+    return n1 + n2;
 }
 console.log(somar(2, 2));
 
@@ -69,12 +69,12 @@ falarCom('João');
 
 // Parâmetros padrão
 function contagemRegressiva(inicio: number = 5, fim: number = inicio - 5): void {
-  console.log(inicio);
-  while (inicio > fim) {
-    inicio--;
     console.log(inicio);
-  }
-  console.log('Fim!');
+    while (inicio > fim) {
+        inicio--;
+        console.log(inicio);
+    }
+    console.log('Fim!');
 }
 
 contagemRegressiva();
@@ -89,7 +89,7 @@ const turmaB: string[] = ['Fernando', ...turmaA, 'Miguel', 'Lorena'];
 console.log(turmaB);
 
 function retornarArray(...args: number[]): number[] {
-  return args;
+    return args;
 }
 
 const numeros = retornarArray(1, 2, 4, 5, 6, 345, 623);
@@ -100,14 +100,14 @@ console.log(retornarArray(...numbers));
 const tupla: [number, string, boolean] = [1, 'abc', false];
 
 function tuplaParam1(a: number, b: string, c: boolean): void {
-  console.log(`1) ${a} ${b} ${c}`);
+    console.log(`1) ${a} ${b} ${c}`);
 }
 
 tuplaParam1(...tupla);
 
 function tuplaParam2(...params: [number, string, boolean]) {
-  // console.log(Array.isArray(params))
-  console.log(`2) ${params[0]} ${params[1]} ${params[2]}`);
+    // console.log(Array.isArray(params))
+    console.log(`2) ${params[0]} ${params[1]} ${params[2]}`);
 }
 
 tuplaParam2(...tupla);
@@ -123,11 +123,11 @@ console.log(ano);
 
 // Destructuring (objeto)
 const item = {
-  nome: 'SSD 480GB',
-  preco: 200,
-  caracteristicas: {
-    w: 'Importado'
-  }
+    nome: 'SSD 480GB',
+    preco: 200,
+    caracteristicas: {
+        w: 'Importado'
+    }
 };
 
 const nomeItem = item.nome;
@@ -136,9 +136,9 @@ console.log(nomeItem);
 console.log(precoItem);
 
 const {
-  nome: n,
-  preco: p,
-  caracteristicas: { w }
+    nome: n,
+    preco: p,
+    caracteristicas: { w }
 } = item;
 console.log(n);
 console.log(p);
@@ -163,7 +163,7 @@ console.log(dobro(10));
 
 // Exercicio 2
 const dizerOla = function (nome: string = 'Pessoa'): void {
-  console.log('Olá, ' + nome);
+    console.log('Olá, ' + nome);
 };
 
 dizerOla();
